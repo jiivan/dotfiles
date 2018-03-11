@@ -1,0 +1,51 @@
+[push]
+  default = simple
+[user]
+  signingkey = C33AFA85
+  name = Dariusz Rybi
+  email = jiivanq@gmail.com
+[commit]
+  gpgsign
+[alias]
+  ci = commit -S
+  st = status
+  co = checkout
+  di = diff
+  lll = log --oneline
+  ll = "!git --no-pager log --format="%Cgreen%h%Creset%x09%Cblue%an%Creset%x09%s" HEAD~10..HEAD"
+  pl = pull
+  plr = pull --rebase
+  pu = push
+  puf = push --force
+  s = show
+  st = status -sb     # Short format
+  sv = status -vv     # Verbose format containing diffs for unstaged changes
+[color]
+  ui = true
+  status = auto
+  diff = auto
+  branch = auto
+  interactive = auto
+  pager = true
+[color "branch"]
+  current = yellow reverse
+  local = yellow
+  remote = green
+[color "status"]
+  added = yellow
+  changed = green
+  untracked = cyan
+[color "diff"]
+  meta = yellow bold
+  frag = magenta bold
+  old = red bold
+  new = green bold
+  whitespace = red reverse
+[core]
+  editor = vim
+[diff]
+  # Make diffs shorter when moving/copying files
+  rename = copy
+  # Git diff will use (i)ndex, (w)ork tree, (c)ommit and (o)bject
+  # instead of a/b/c/d as prefixes for patches
+  mnemonicprefix = true
