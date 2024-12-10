@@ -19,3 +19,4 @@ Now `CocInstall`:
   1. `coc-docker`: Dockerfile and docker-compose formatters
   1. `coc-yaml`: Yaml plugin for Kubernetes and terraform files
 
+https://zigtools.org/zls/editors/vim/coc/

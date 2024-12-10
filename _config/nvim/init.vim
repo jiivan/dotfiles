@@ -42,3 +42,10 @@ let NERDTreeShowHidden=1 " Show hidden files in NerdTree buffer.
 filetype plugin indent on
 syntax on
 colorscheme nord
+
+" ZIG language configuration
+" don't show parse errors in a separate window
+let g:zig_fmt_parse_errors = 0
+" disable format-on-save from `ziglang/zig.vim`
+let g:zig_fmt_autosave = 0
+
