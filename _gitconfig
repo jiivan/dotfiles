@@ -1,7 +1,7 @@
 [push]
   default = simple
 [user]
-  signingkey = C33AFA85
+  signingkey = 410A915CF7E8A7BD9605F2A79AD9A62FF3BE79EF
   name = Dariusz Rybi
   email = jiivanq@gmail.com
 [commit]
