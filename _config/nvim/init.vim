@@ -22,6 +22,12 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'tpope/vim-fugitive'
 " Auto-close braces and scopes
 Plug 'jiangmiao/auto-pairs'
+" Database helpers
+" After installation, run :DBUI, which should open up a drawer with all databases provided. When you finish writing your query, just write the file (:w) and it will automatically execute the query for that database.
+Plug 'tpope/vim-dadbod'
+Plug 'kristijanhusak/vim-dadbod-ui'
+Plug 'kristijanhusak/vim-dadbod-completion' "Optional
+
 call plug#end()
 
 " Code action on <leader>a
