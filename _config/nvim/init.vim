@@ -27,7 +27,13 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-dadbod'
 Plug 'kristijanhusak/vim-dadbod-ui'
 Plug 'kristijanhusak/vim-dadbod-completion' "Optional
-
+" TELESCOPE
+" install nerd fonts: https://gist.github.com/matthewjberger/7dd7e079f282f8138a9dc3b045ebefa0
+" ( download to .local/share/fonts/ && fc-cache -fv )
+Plug 'nvim-tree/nvim-web-devicons'
+Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release' }
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim', { 'branch': '0.1.x' }
 call plug#end()
 
 " Code action on <leader>a
@@ -41,6 +47,12 @@ nmap <leader>f  <Plug>(coc-format-selected)
 nmap <silent> gd <Plug>(coc-definition)
 " Open definition in a split window
 nmap <silent> gv :vsp<CR><Plug>(coc-definition)<C-W>L
+
+" Find files using Telescope command-line sugar.
+nnoremap <leader>ff <cmd>Telescope find_files<cr>
+nnoremap <leader>fg <cmd>Telescope live_grep<cr>
+nnoremap <leader>fb <cmd>Telescope buffers<cr>
+nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 
 map <C-n> :NERDTreeToggle<CR>
 let NERDTreeShowHidden=1 " Show hidden files in NerdTree buffer.
