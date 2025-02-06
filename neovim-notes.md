@@ -20,3 +20,6 @@ Now `CocInstall`:
   1. `coc-yaml`: Yaml plugin for Kubernetes and terraform files
 
 https://zigtools.org/zls/editors/vim/coc/
+
+Default leader key is `\`
+Suggestion select: Ctrl-Y, Next: Tab, Prev: Shift_tab
