@@ -42,7 +42,7 @@
   new = green bold
   whitespace = red reverse
 [core]
-  editor = vim
+  editor = nvim
 [diff]
   # Make diffs shorter when moving/copying files
   rename = copy
